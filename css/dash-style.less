@@ -1,0 +1,46 @@
+
+@sitebg:#333;
+@sitebg1:#999;
+@btnbg1:#4169e1;
+@sitecolor:#fff;
+@sitecolor1:#333;
+@btncolor:#fff;
+.error_class{
+	color: #f00;	
+}
+.save_btn{
+	padding: 7px 20px;
+	background-color: @btnbg1;
+	border:1px solid #ccc;	
+	color: @btncolor;	
+	&:hover{
+		cursor: pointer;
+		background-color:darken(@btnbg1,20%);
+		border: 1px solid #aaa;
+	}
+}
+.add_form{
+	margin: 15px;		
+	ul{
+		margin: 0;	
+		padding: 0;	
+		li{
+			list-style: none;
+			margin: 10px 0;			
+			label{
+				width: 130px;	
+				float: left;	
+				line-height: 25px;		
+			}
+			input[type="text"]{
+				width: 220px;
+				border-radius: 0;
+				border: 1px solid #ccc;
+				padding: 5px;				
+			}
+			input[type="submit"]{
+				margin-left: 130px;
+			}
+		}
+	}
+}

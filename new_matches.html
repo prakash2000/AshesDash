@@ -1,0 +1,38 @@
+<h1>Add New Matches</h1>
+<div class="dashboard_contain">
+ <div class="add_form">
+	 <form name="NewMatchForm" ng-submit="save(match)" novalidate>
+		<ul>
+		 <li>
+			<label>Match No</label>
+			<input type="text" name="matchno" ng-model="match.id" placeholder="Match No" required/>
+			<span class="error_class" ng-show="NewMatchForm.$dirty && NewMatchForm.matchno.$error.required">*Enter Match Number</span>
+		 </li>
+		 <li>
+			<label>Match Date</label>
+			<input type="text" name="matchdate" ng-model="match.date" placeholder="Match Date" required/>
+			<span class="error_class" ng-show="NewMatchForm.$dirty && NewMatchForm.matchdate.$error.required">*Enter Date</span>
+		 </li>
+		 <li>
+			<label>Match City</label>
+			<input type="text" name="matchcity" ng-model="match.city" placeholder="Match City" required/>
+			<span class="error_class" ng-show="NewMatchForm.$dirty && NewMatchForm.matchcity.$error.required">*Enter City</span>			
+		 </li>
+		 <li>
+			<label>Match Ground</label>
+			<input type="text" name="matchground" ng-model="match.ground" placeholder="Match Ground" required/>
+			<span class="error_class" ng-show="NewMatchForm.$dirty && NewMatchForm.matchground.$error.required">*Enter Ground</span>			
+		 </li>
+		 <li>
+			<label>Match Result</label>
+			<input type="text" name="matchresult" ng-model="match.result" placeholder="Match Result" required/>
+			<span class="error_class" ng-show="NewMatchForm.$dirty && NewMatchForm.matchresult.$error.required">*Enter Result</span>			
+		 </li>
+		 <li>			
+			<input type="submit" class="save_btn" value="Save" />				
+		 </li>
+		</ul>
+	 </form>
+	 <pre>{{data | json}}</pre>
+ </div>
+</div>
